@@ -10,4 +10,4 @@ More Information about the GSS can be found [here](http://gss.norc.org/)
 
 A slide show detailing the logistic regression and how I came the conclussion can be found on the web app. 
 
-<center><img src="https://github.com/dylanjm/ShinyApp-PartyID/blob/master/www/america.png?raw=true" alt="america.png"></center>
+<img src="https://github.com/dylanjm/ShinyApp-PartyID/blob/master/www/america.png?raw=true" alt="america.png">
