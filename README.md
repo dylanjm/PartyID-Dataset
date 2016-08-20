@@ -1,6 +1,6 @@
 # Political Party Affiliation Dataset
 
-Web application built using Rstudio and Shiny.
+Web application built using R and Shiny.
 
 I cleaned some data taken from the GSS used to predict political party affiliation using logistic regression
 
