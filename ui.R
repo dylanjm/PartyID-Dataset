@@ -1,11 +1,10 @@
 library(shiny)
-library(RMySQL)
+#library(RMySQL)
 
 shinyUI(fluidPage(
   titlePanel("Predicting Political Party Affiliation",
-             tags$head(tags$style(type = "text/css", "h2{color:white;}
-                                  h2{ font-size: 40px;}
-                                  a{color:#002266"))),
+             tags$head(tags$style(type = "text/css",
+                                  "h2{color:white;} h2{ font-size: 40px;} a{color:#002266"))),
     sidebarPanel(
       tags$head(tags$style("body {background-color:#808080;}")),
       numericInput("age", label = h4("Age:"), 18,
@@ -41,23 +40,27 @@ shinyUI(fluidPage(
   
   mainPanel(
     tabsetPanel(
-      tabPanel("Probability", verbatimTextOutput("answer")),
-      tabPanel("Presentation", uiOutput("slide1"), uiOutput("slide2"),
-               uiOutput("slide3"), uiOutput("slide4"), uiOutput("slide5"),
-               uiOutput("slide6"), uiOutput("slide7"), uiOutput("slide8"), uiOutput("slide9")),
-      tabPanel("Graphics", plotOutput("plot1"), plotOutput("plot2"),
-               plotOutput("plot3"), plotOutput("plot4"), plotOutput("plot5")),
-      tabPanel("Model Info", verbatimTextOutput("model"))
+      tabPanel("Probability",
+               verbatimTextOutput("answer")
+               ),
+      tabPanel("Presentation",
+               lapply(1:9, function(i) {
+                 uiOutput(paste0('slide',i))
+               })
+               ),
+      tabPanel("Graphics", 
+               lapply(1:5, function(i) {
+                 plotOutput(paste0('plot',i))
+               })
+               ),
+      tabPanel("Model Info",
+               verbatimTextOutput("model")
+               )
     ),
     img(src='america.png',
         tags$head(tags$style(
           type="text/css",
-          "img {
-          width: 100%;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          }")))
+          "img {width: 100%; display: block; margin-left: auto; margin-right: auto;}")))
     )
   )
 )
