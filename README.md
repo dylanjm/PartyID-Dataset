@@ -6,8 +6,8 @@ I cleaned some data taken from the GSS used to predict political party affiliati
 
 More Information about the GSS can be found [here](http://gss.norc.org/)
 
-[The web app is hosted at www.shinnyapps.io and can be found here](https://rtutorials-portfolio.shinyapps.io/PartyID/)
+[The web app is hosted at www.shinnyapps.io and can be found here](https://dylanjm.shinyapps.io/predicting_politics/)
 
 A slide show detailing the logistic regression and how I came the conclussion can be found on the web app. 
 
-<img src="https://github.com/dylanjm/ShinyApp-PartyID/blob/master/www/america.png?raw=true" alt="america.png">
+![Website](https://imgur.com/9JS5jHE)
