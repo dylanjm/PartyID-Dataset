@@ -10,4 +10,4 @@ More Information about the GSS can be found [here](http://gss.norc.org/)
 
 A slide show detailing the logistic regression and how I came the conclussion can be found on the web app. 
 
-![Website](https://imgur.com/9JS5jHE)
+![Website](https://imgur.com/9JS5jHE.jpg)
